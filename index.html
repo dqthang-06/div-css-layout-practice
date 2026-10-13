@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục trang web bằng Div và CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Phân vùng chứa toàn bộ trang web -->
+    <div id="main">
+        
+        <!-- 1. Phân vùng đầu trang (Logo & Banner) -->
+        <div id="head">
+            <h1>LOGO & BANNER</h1>
+        </div>
+
+        <!-- 2. Phân vùng liên kết đầu trang -->
+        <div id="head-link">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Khung bao bọc phần thân để xử lý float (Clearfix) -->
+        <div id="body-content">
+            <!-- 3. Phân vùng cột trái -->
+            <div id="left">
+                <h3>Menu Trái</h3>
+                <ul>
+                    <li><a href="#">Khoá học Web</a></li>
+                    <li><a href="#">Khoá học Java</a></li>
+                    <li><a href="#">Khoá học Python</a></li>
+                    <li><a href="#">Tin tuyển dụng</a></li>
+                    <li><a href="#">Học bổng</a></li>
+                </ul>
+            </div>
+
+            <!-- 4. Phân vùng nội dung chính ở giữa -->
+            <div id="content">
+                <div class="box hot-news">
+                    <h2>Hot News</h2>
+                    <p>Chào mừng học viên tham gia khóa học Lập trình Web Front-end với HTML và CSS.</p>
+                </div>
+                <div class="box photo-slide">
+                    <h2>Photo Slide</h2>
+                    <p>Khu vực trình chiếu hình ảnh hoạt động của trung tâm.</p>
+                </div>
+                <div class="box news-item">
+                    <h2>Tin tức nổi bật</h2>
+                    <p>Nội dung chi tiết các sự kiện, tin tức công nghệ cập nhật hàng tuần.</p>
+                </div>
+            </div>
+
+            <!-- 5. Phân vùng cột phải -->
+            <div id="right">
+                <div class="widget">
+                    <h3>Lịch học</h3>
+                    <p>Thứ 2 - Thứ 6: 18:30 - 21:00</p>
+                </div>
+                <div class="widget">
+                    <h3>Biểu đồ tiến độ</h3>
+                    <p>Hoàn thành: 85% tiến độ môn học.</p>
+                </div>
+                <div class="widget">
+                    <h3>Bản đồ</h3>
+                    <p>Khu vực bản đồ chỉ dẫn đến cơ sở đào tạo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Phân vùng cuối trang -->
+        <div id="footer">
+            <p>&copy; 2026 Bản quyền thuộc về CodeGym. Bảo lưu mọi quyền.</p>
+            <p>Email: contact@codegym.vn | Hotline: 024-xxxx-xxxx</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
